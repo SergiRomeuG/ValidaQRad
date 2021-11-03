@@ -13,7 +13,7 @@ html{overflow-x:hidden;box-sizing: border-box;min-height: 100%;}
 *, *::before, *::after {
   box-sizing: inherit;
 }
-footer{position: absolute; bottom: 0; width: 100%;}
+footer{width: 100%;}
 html,
 body,
 p,
@@ -27,7 +27,10 @@ h5 {
 }
 html {
   box-sizing: border-box;
+  height: 100%;
 }
+main{min-height: 80%;}
+body {height: 100%;}
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
     margin-top: 10px;
     margin-bottom: 10px;
