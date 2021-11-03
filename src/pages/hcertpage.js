@@ -5,8 +5,8 @@ import { AbstractPage } from './abstractpage'
 import { verifyHcert } from '../components/verifications'
 //import { T } from '../i18n/translate';
 //import { gotoPage } from '../router';
-import ok_image from "../img/ok.png"
-import error_image from "../img/error.png"
+import ok_image from "../img/ok.jpg"
+import error_image from "../img/error.jpg"
 import warning_image from "../img/warning.png"
 
 var gotoPage = window.gotoPage
@@ -98,38 +98,41 @@ export class DisplayHcert extends AbstractPage {
         // The credential
         let payload = cred[1];
 
-        let title = "Validated"
+        let title = "VALIDATED"
         let image = ok_image
-        let color = "bkg-success"
+        let color = "text-color-success"
 
         if (verification.result === "WARNING") {
             title = "Warning"
             image = warning_image
-            color = "bkg-warning"
+            color = "text-color-warning"
         } else if (verification.result === "ERROR") {
             title = "Not Validated"
             image = error_image
-            color = "bkg-error"
+            color = "text-color-error"
         }
 
         let thehtml = html`
 
             <div class="container">
 
-                <div id="hcertWarning" class="w3-panel ${color}">
-                    <img src=${image}  alt="">
-                    <h3>${T(title)}</h3>
-                    <p>${verification.message}</p>
+                <div id="hcertWarning" class="w3-panel" style="text-align: center;">
+                    <img style="width: 100px;" src=${image}  alt="">
+                    <div id="validationResultText" style="margin-top: 10px; margin-bottom: 10px;">
+                        <p class="${color}" style="font-size: 24px;">${T(title)}</p>
+                        <p class="${color}" style="font-size: 24px;">${verification.message}</p>
+                    </div>
                 </div>
 
-                <div class="section">
+                <div class="section text-color">
                     <div class="subsection">
                         <div class="etiqueta">${T("Surname and forename")}</div>
-                        <div class="valor h4">${payload.fullName}</div>
+                        <div class="valor" style="font-size: 24px;">${payload.fullName}</div>
                     </div>
+                    <hr>
                     <div class="subsection">
                         <div class="etiqueta">${T("Date of birth")}</div>
-                        <div class="valor h4">${payload.dateOfBirth}</div>
+                        <div class="valor" style="font-size: 24px;">${payload.dateOfBirth}</div>
                     </div>
                 </div>
            

@@ -9,10 +9,11 @@
     }
 }
 :root {font-family: Roboto, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";}
-html{overflow-x:hidden;box-sizing: border-box;}
+html{overflow-x:hidden;box-sizing: border-box;min-height: 100%;}
 *, *::before, *::after {
   box-sizing: inherit;
 }
+footer{width: 100%;}
 html,
 body,
 p,
@@ -26,8 +27,10 @@ h5 {
 }
 html {
   box-sizing: border-box;
+  height: 100%;
 }
-body{max-width:980px}
+main{min-height: 80%;}
+body {height: 100%;}
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -65,13 +68,14 @@ img{vertical-align:middle}
 .padding-16{padding-top:16px!important;padding-bottom:16px!important}
 .bar{width:100%;overflow:hidden;}
 .bar .bar-item{padding:8px 16px;float:left;width:auto;border:none;display:block;outline:0}
-.color-primary,.hover-color-primary:hover{color: white!important;background-color:#919597!important}
+.color-primary,.hover-color-primary:hover{color: #323e48!important;background-color:#d9e0e2!important}
+.color-footer{color: white; background-color: #323e48;}
 .xlarge{font-size:24px!important}
 .btn{border:none;display:inline-block;padding:16px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap}
 .btn-menu{border:none;display:inline-block;padding:16px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap}
 .btn-menu{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}   
-.btn-menu{color:white!important;background-color: #919597!important}
-.round-xlarge{border-radius:16px}
+.btn-menu{color:white!important;background-color: #d9e0e2!important}
+.round-xlarge{border-radius:6px}
 .focus-visible-only:focus-visible {outline: 2px solid black !important;}
 .right{float:right!important}
 section,.section{padding:0.01em 10px;margin-top:0px;margin-bottom:10px;}

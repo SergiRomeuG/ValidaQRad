@@ -3,7 +3,7 @@ import { html } from 'lit-html';
 
 import ukflag from './flags/uk.png'
 import esflag from './flags/es.png'
-import caflag from './flags/ca.png'
+import andflag from './flags/and.png'
 import frflag from './flags/fr.png'
 import deflag from './flags/de.png'
 import itflag from './flags/it.png'
@@ -34,7 +34,7 @@ export class SelectLanguage extends AbstractPage {
         <li> 
             <a class="w3-bar focus-visible-only" @click=${()=>this.selectLang("ca")} href="javascript:void(0)">
                 <div class="w3-bar-item" style="padding:8px;">
-                    <img src=${caflag} style="padding:8px;width:70px">
+                    <img src=${andflag} style="padding:8px;width:70px">
                     <span class="h3" style="vertical-align:middle;">Català</span>
                 </div>
             </a>
