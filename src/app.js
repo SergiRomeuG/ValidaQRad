@@ -1,5 +1,7 @@
 // Get the build date of the application
 import buildDate from './version.txt?raw'
+import andorra_digital_image from './img/andorra_digital.svg'
+import escut_andorra from './img/escut_andorra.png'
 
 // Store version in global Window object and in local storage
 window.appVersion = buildDate
@@ -181,14 +183,15 @@ function initialHeader() {
 
     var initialHeader = `
     <div class="bar xlarge color-primary">
-        <div class="bar-item" onclick="resetAndGoHome()" style="color: white;padding:10px">VerificaCOVID.gencat.cat</div>
-        <a href="javascript:void(0)" onclick="toggleMenu()" class="bar-item btn-menu right focus-visible-only">&#9776;</a>
+        <div class="bar-item text-color" onclick="resetAndGoHome()" style="padding:10px; position: relative; width: 100%; text-align: center; font-weight: 500;">Valida QR Andorra</div>
+        <a href="javascript:void(0)" onclick="toggleMenu()" class="bar-item btn-menu right focus-visible-only" style="position: absolute; right: 0;">&#9776;</a>
     </div>
 
     <div class="w3-bar-block xlarge color-primary hide" id="mobileMenu">
         <a onclick='gotoPage("refreshKeys")' href="javascript:void(0)" class="w3-bar-item w3-large btn-menu focus-visible-only">${T("Update public keys")}</a>
         <a onclick='gotoPage("selectLanguage")' href="javascript:void(0)" class="w3-bar-item w3-large btn-menu focus-visible-only">${T("Language")}</a>
         <a onclick='gotoPage("selectCamera")' href="javascript:void(0)" class="w3-bar-item w3-large btn-menu focus-visible-only">${T("Camera")}</a>
+        <a onclick='gotoPage("help")' href="javascript:void(0)" class="w3-bar-item w3-large btn-menu focus-visible-only">${T("Help")}</a>
     </div>
     `
     document.querySelector('header').innerHTML = initialHeader
@@ -205,7 +208,7 @@ function initialScreen() {
     
             <div class="padding-16 center">
     
-                <button onclick='gotoPage("verifier")' class="btn color-primary hover-color-primary
+                <button onclick='gotoPage("verifier")' class="btn btn-color-primary btn-hover-color-primary
                     xlarge round-xlarge focus-visible-only">
                     ${T("Start verifying")}</button>
     
@@ -217,6 +220,22 @@ function initialScreen() {
 }
 window.initialScreen = initialScreen
 
+function initialFooter() {
+    let image = andorra_digital_image;
+    let image_escut = escut_andorra;
+    var initialFooterHTML;
+        initialFooterHTML = `
+        <div class="bar xlarge color-footer" style="text-align:center;">
+            <img style="width: 150px; margin-top: 20px;" src=${image_escut} alt="">
+            <br>
+            <img style="width: 150px;" src=${image}  alt="">
+        </div>
+        
+        `
+        document.querySelector('footer').innerHTML = initialFooterHTML
+}
+window.initialFooter = initialFooter
+
 // Create the header
 initialHeader();
 // Create the Intro page of the app
@@ -225,6 +244,8 @@ initElem.id = 'intro'
 document.querySelector('main').append(initElem)
 // And draw it
 initialScreen();
+// Create the footer
+initialFooter();
 
 // **************************************
 // Support for the Trusted Lists

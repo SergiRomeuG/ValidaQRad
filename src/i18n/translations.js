@@ -170,12 +170,12 @@ export var translations = {
         "de": "Das Zertifikat ist für Reisen ungültig, auch wenn es korrekt mit einem PRE-Schlüssel signiert ist.",
         "it": "Il certificato non risulta valido per viaggiare, sebbene sia stato firmato correttamente con la chiave PRE."
     },
-    "Validated": {
-        "es": "Validado",
-        "ca": "Validat",
-        "fr": "Validé",
-        "de": "Validiert",
-        "it": "Verificato con successo"
+    "VALIDATED": {
+        "es": "VALIDADO",
+        "ca": "VALIDAT",
+        "fr": "VALIDÉ",
+        "de": "VALIDIERT",
+        "it": "VERIFICATO CON SUCCESSO"
     },
     "Warning": {
         "es": "Atención",
@@ -185,11 +185,11 @@ export var translations = {
         "it": "Attenzione!"
     },
     "Not Validated": {
-        "es": "No Validado",
-        "ca": "No Validat",
-        "fr": "Non Validé",
-        "de": "Nicht Validiert",
-        "it": "Non Validato"
+        "es": "NO VALIDADO",
+        "ca": "NO VALIDAT",
+        "fr": "NON VALIDÉ",
+        "de": "NITCH VALIDIERT",
+        "it": "NON VALIDATO"
     },
     "The certificate is valid.": {
         "es": "El certificado es válido",
@@ -289,5 +289,92 @@ export var translations = {
         "fr": "État membre où a été effectuée la vaccination",
         "de": "Mitgliedstaat der Impfung",
         "it": "Paese membro in cui è stata effettuata la vaccinazione"
+    },
+    "Help": {
+        "es": "Ayuda",
+        "ca": "Ajuda",
+        "fr": "Aider",
+        "de": "Hilfe",
+        "it": "Aiuto" 
+    },
+    "$help01": {
+        "es": "El objetivo de esta aplicación es verificar la autenticidad y vigencia del Certificado Covid Digital Europeo",
+        "ca": "L’objectiu d’aquesta aplicació és verificar l’autenticitat i vigència del Certificat Covid Digital Europeu.",
+        "en": "The purpose of this application is to verify the authenticity and validity of the European Covid Digital Certificate.",
+        "fr": "Le but de cette application est de vérifier l'authenticité et la validité du certificat numérique européen Covid.",
+        "de": "Der Zweck dieses Antrags besteht darin, die Echtheit und Gültigkeit des europäischen digitalen Covid-Zertifikats zu überprüfen.",
+        "it": "Lo scopo di questa applicazione è verificare l'autenticità e la validità del Certificato Digitale Europeo Covid."
+    },
+    "$help02": {
+        "es": "Para verificar el código QR de un certificado será necesario:",
+        "ca": "Per verificar el codi QR d'un certificat caldrà:",
+        "en": "To verify the QR code of a certificate you will need:",
+        "fr": "Pour vérifier le code QR d'un certificat, vous aurez besoin de:",
+        "de": "Um den QR-Code eines Zertifikats zu verifizieren, benötigen Sie:",
+        "it": "Per verificare il codice QR di un certificato avrai bisogno di:"
+    },
+    "$help03": {
+        "es": "Permitir el acceso a la cámara cuando así lo solicite la aplicación \u0022Validador de QR Andorra\u0022",
+        "ca": "Permetre l'accés a la càmera quan així ho sol·liciti l'aplicació \u0022Validador de QR Andorra\u0022",
+        "en": "Allow access to the camera when requested by the \u0022Validador de QR Andorra\u0022 application",
+        "fr": "Autoriser l'accès à la caméra à la demande de l'application \u0022Validador de QR Andorra\u0022",
+        "de": "Erlauben Sie den Zugriff auf die Kamera, wenn Sie von der Anwendung \u0022Validador de QR Andorra\u0022 angefordert werden",
+        "it": "Consenti l'accesso alla telecamera quando richiesto dall'applicazione \u0022Validador de QR Andorra\u0022;"
+    },
+    "$help04": {
+        "es": "Acercar la cámara del dispositivo móvil aproximadamente a 6 centímetros del QR de forma que se visualice completamente, bien enfocado y centrado en la pantalla del dispositivo.",
+        "ca": "Acostar la càmera del dispositiu mòbil aproximadament a 6 centímetres del QR de tal forma que es visualitzi completament, ben enfocat i centrat a la pantalla del dispositiu.",
+        "en": "Move the camera of the mobile device approximately 6 inches from the QR so that it is fully displayed, well focused, and centered on the screen of the device.",
+        "fr": "Déplacez la caméra de l'appareil mobile à environ 6 pouces du QR afin qu'elle soit entièrement affichée, bien focalisée et centrée sur l'écran de l'appareil.",
+        "de": "Bewegen Sie die Kamera des Mobilgeräts ungefähr 15 cm vom QR weg, damit es vollständig angezeigt, gut fokussiert und auf dem Bildschirm des Geräts zentriert ist.",
+        "it": "Sposta la fotocamera del dispositivo mobile a circa 6 pollici dal QR in modo che sia completamente visualizzata, ben messa a fuoco e centrata sullo schermo del dispositivo."
+    },
+    "$help05": {
+        "es": "(Atención: la falta de iluminación, el exceso de luz (reflejos), o las vibraciones, pueden impedir una correcta lectura).",
+        "ca": "(Atenció: la manca d'il·luminació, l'excés de llum (reflexos), o les vibracions, poden impedir una lectura correcta).",
+        "en": "(Attention: lack of lighting, excess light (reflections), or vibrations, may prevent a correct reading).",
+        "fr": "(Attention : un manque d'éclairage, un excès de lumière (reflets), ou des vibrations, peuvent empêcher une lecture correcte).",
+        "de": "(Achtung: Fehlende Beleuchtung, zu viel Licht (Reflexionen) oder Vibrationen können eine korrekte Ablesung verhindern).",
+        "it": "(Attenzione: mancanza di illuminazione, luce eccessiva (riflessi), o vibrazioni, possono impedire una corretta lettura)."
+    },
+    "$help06": {
+        "es": "Información y confidencialidad",
+        "ca": "Informació i confidencialitat",
+        "en": "Information and confidentiality",
+        "fr": "Informations et confidentialité",
+        "de": "Informationen und Vertraulichkeit",
+        "it": "Informazioni e riservatezza"
+    },
+    "$help07": {
+        "es": "Sus datos están protegidos, la aplicación no registra ni comparte los datos verificados.",
+        "ca": "Les vostres dades estan protegides, l’aplicació no registra ni comparteix les dades verificades.",
+        "en": "Your data is protected, the application does not record or share verified data.",
+        "fr": "Vos données sont protégées, l'application n'enregistre ni ne partage les données vérifiées.",
+        "de": "Ihre Daten sind geschützt, die Anwendung zeichnet keine verifizierten Daten auf oder gibt sie weiter.",
+        "it": "I tuoi dati sono protetti, l'applicazione non registra né condivide dati verificati."
+    },
+    "$help08": {
+        "es": "Queda terminantemente prohibido registrar o duplicar, por cualquier medio, los Certificados Covid de otras personas que sean verificados por la aplicación.",
+        "ca": "Queda terminantment prohibit enregistrar o duplicar, per qualsevol mitjà, els Certificats Covid d’altres persones que siguin verificats per l’aplicació.",
+        "en": "It is strictly forbidden to register or duplicate, by any means, the Covid Certificates of other people who are verified by the application.",
+        "fr": "Il est strictement interdit d'enregistrer ou de dupliquer, par quelque moyen que ce soit, les Certificats Covid d'autres personnes vérifiées par l'application.",
+        "de": "Es ist strengstens untersagt, die Covid-Zertifikate anderer Personen, die durch die Anwendung verifiziert werden, auf irgendeine Weise zu registrieren oder zu duplizieren.",
+        "it": "È severamente vietato registrare o duplicare, con qualsiasi mezzo, i Certificati Covid di altre persone verificate dall'applicazione."
+    },
+    "$help09": {
+        "es": "Se puede encontrar más información en ",
+        "ca": "Es pot trobar més informació a ",
+        "en": "More information can be found at ",
+        "fr": "Plus d'informations sont disponibles sur ",
+        "de": "Weitere Informationen finden Sie unter ",
+        "it": "Maggiori informazioni sono disponibili su "
+    },
+    "$help10": {
+        "es": "Para cualquier duda puede contactar con la dirección de correo: ",
+        "ca": "Per qualsevol dubte es pot contactar amb l’adreça de correu: ",
+        "en": "If you have any questions, please contact the e-mail address: ",
+        "fr": "Si vous avez des questions, veuillez contacter l'adresse e-mail: ",
+        "de": "Bei Fragen wenden Sie sich bitte an die E-Mail-Adresse: ",
+        "it": "In caso di domande, contattare l'indirizzo e-mail: "
     }
 }

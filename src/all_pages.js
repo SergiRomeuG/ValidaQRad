@@ -12,7 +12,8 @@ import { SelectLanguage } from "./i18n/i18";
 import { TermsOfUse } from './pages/termsofuse';
 import { PrivacyPolicy } from './pages/privacypolicy';
 import { SelectCamera } from './pages/selectcamera';
-import { RefreshKeys } from './pages/refreshkeys'
+import { RefreshKeys } from './pages/refreshkeys';
+import { Help } from './pages/help';
 
 export var pageDefs = [
     {
@@ -62,6 +63,10 @@ export var pageDefs = [
     {
         name: "selectCamera",
         className: SelectCamera
+    },
+    {
+        name: "help",
+        className: Help
     },
     {
         name: "refreshKeys",
