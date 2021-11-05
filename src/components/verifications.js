@@ -53,9 +53,9 @@ function verifyTestCert(hcert) {
     // The test is valid for 72 hours
     let validityTime = 72*60*60*1000
 
-    // But only 48 hours if is a TAR
-    if (payload["typeTest"] === "Rapid immunoassay") {
-        validityTime = 48*60*60*1000      
+    // But only 12 hours if is a TAR
+    if (payload["typeTest"] === "LP217198-3") {
+        validityTime = 12*60*60*1000      
     }
 
     // The time until the test is valid
