@@ -1,11 +1,11 @@
 export var translations = {
     "$intro01": {
-        "en": "This application allows the verification of COVID certificates issued by EU Member States and also certificates issued by the UK Government with the same format as the EU Digital COVID Certificate",
-        "es": "Esta aplicación permite la verificación de certificados COVID emitidos por los Estados Miembro de la UE y también los certificados emitidos por el Reino Unido con el mismo formato que el Certificado COVID Digital de la UE",
-        "ca": "Aquesta aplicació permet la verificació dels certificats COVID emesos pels Estats membres de la UE i també els certificats emesos pel Regne Unit en el mateix format que el Certificat COVID digital de la UE",
-        "fr": "Cette application permet de vérifier les certificats COVID émis par les États membres de l'UE, ainsi que les certificats émis par le gouvernement britannique sous le même format que le certificat COVID numérique de l'UE.",
-        "de": "Diese Anwendung ermöglicht die Überprüfung von COVID-Zertifikaten, die von EU-Mitgliedstaaten ausgestellt wurden, sowie von Zertifikaten, die von der britischen Regierung ausgestellt wurden und dasselbe Format wie das digitale COVID-Zertifikat der EU haben.",
-        "it": "Questa applicazione consente di verificare i certificati COVID rilasciati dagli stati membri dell'UE nonché i certificati rilasciati dal governo del Regno Unito con lo stesso formato del certificato digitale COVID UE"
+        "en": "This application allows the verification of COVID certificates issued by Andorra, EU Member States, the United Kingdom and all other third countries that issue certificates in the same format as the EU digital COVID Certificate.",
+        "es": "Esta aplicación permite la verificación de los certificados COVID emitidos por Andorra, por los Estados miembros de la UE, Reino Unido y de todos aquellos otros países terceros que emiten certificados en el mismo formato que el Certificado COVID digital de la UE.",
+        "ca": "Aquesta aplicació permet la verificació dels certificats COVID emesos per Andorra,  pels Estats membres de la UE, Regne Unit  i de tots aquells altres països tercers que emeten certificats en el mateix format que el Certificat COVID digital de la UE.",
+        "fr": "Cette application permet la vérification des certificats COVID délivrés par Andorre, les États membres de l'UE, le Royaume-Uni et tous les autres pays tiers qui délivrent des certificats au même format que le certificat COVID numérique de l'UE.",
+        "de": "Diese Anwendung ermöglicht die Überprüfung von COVID-Zertifikaten, die von Andorra, den EU-Mitgliedstaaten, dem Vereinigten Königreich und allen anderen Drittländern ausgestellt wurden, die Zertifikate im gleichen Format wie das digitale EU-COVID-Zertifikat ausstellen.",
+        "it": "Questa applicazione consente la verifica dei certificati COVID emessi da Andorra, dagli Stati membri dell'UE, dal Regno Unito e da tutti gli altri paesi terzi che rilasciano certificati nello stesso formato del certificato digitale COVID dell'UE."
     },
     "EU Digital COVID Credential Verifier": {
         "es": "Verificador de Credenciales COVID",
@@ -314,12 +314,12 @@ export var translations = {
         "it": "Per verificare il codice QR di un certificato avrai bisogno di:"
     },
     "$help03": {
-        "es": "Permitir el acceso a la cámara cuando así lo solicite la aplicación \u0022Validador de QR Andorra\u0022",
-        "ca": "Permetre l'accés a la càmera quan així ho sol·liciti l'aplicació \u0022Validador de QR Andorra\u0022",
-        "en": "Allow access to the camera when requested by the \u0022Validador de QR Andorra\u0022 application",
-        "fr": "Autoriser l'accès à la caméra à la demande de l'application \u0022Validador de QR Andorra\u0022",
-        "de": "Erlauben Sie den Zugriff auf die Kamera, wenn Sie von der Anwendung \u0022Validador de QR Andorra\u0022 angefordert werden",
-        "it": "Consenti l'accesso alla telecamera quando richiesto dall'applicazione \u0022Validador de QR Andorra\u0022;"
+        "es": "Permitir el acceso a la cámara cuando así lo solicite la aplicación \u0022Valida  QR Andorra\u0022",
+        "ca": "Permetre l'accés a la càmera quan així ho sol·liciti l'aplicació \u0022Valida QR Andorra\u0022",
+        "en": "Allow access to the camera when requested by the \u0022Valida QR Andorra\u0022 application",
+        "fr": "Autoriser l'accès à la caméra à la demande de l'application \u0022Valida QR Andorra\u0022",
+        "de": "Erlauben Sie den Zugriff auf die Kamera, wenn Sie von der Anwendung \u0022Valida QR Andorra\u0022 angefordert werden",
+        "it": "Consenti l'accesso alla telecamera quando richiesto dall'applicazione \u0022Valida QR Andorra\u0022;"
     },
     "$help04": {
         "es": "Acercar la cámara del dispositivo móvil aproximadamente a 6 centímetros del QR de forma que se visualice completamente, bien enfocado y centrado en la pantalla del dispositivo.",

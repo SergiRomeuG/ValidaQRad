@@ -23,10 +23,9 @@ export class Help extends AbstractPage {
                 <div style="padding-left: 20px;">
                     <p style="margin-bottom: 10px;">${T("$help07")}</p>
                     <p style="margin-bottom: 10px;">${T("$help08")}</p>
-                    <p>${T("$help09")} <a href="" rel="noopener noreferrer" target="_blank"></a></p>&nbsp
+                    <p>${T("$help09")} <a href="https://www.govern.ad/coronavirus" rel="noopener noreferrer" target="_blank">https://www.govern.ad/coronavirus</a></p>&nbsp
                 </div>
             </div>
-            <p style="margin-bottom: 40px">${T("$help10")}<a href="mailto:"></a></p>
         </div>
         `
         this.render(theHtml)
