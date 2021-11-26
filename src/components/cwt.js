@@ -198,13 +198,25 @@ class DGCKey {
         let algo = key.algorithm
         console.log("Key algorithm", algo)
 
+        // Set the proper parameters depending on algorithm used when signing
+        if (key.algorithm.name === "RSA-PSS") {
+            algo = {
+                name: "RSA-PSS",
+                saltLength: 32,
+            }
+        } else if (key.algorithm.name === "ECDSA") {
+            algo = {       
+                name: "ECDSA",
+                hash: "SHA-256"         
+            }
+        } else {
+            throw `Invalid signature algorithm: ${key.algorithm.name}`;
+        }
+
         let result
         try {
             result = await window.crypto.subtle.verify(
-                {
-                    name: "ECDSA",
-                    hash: { name: "SHA-256" },
-                },
+                algo,
                 key,
                 signature,
                 bytes
