@@ -1256,19 +1256,20 @@ export class CWT {
         var mt = initialByte >> 5;
         var additionalInformation = initialByte & 0x1f;
 
-        if (mt != MT_TAG) {
-            throw new Error(`COSE object must start with a tag: ${mt}`);
-        }
+        // As per RFC-8152, the COSE object may be tagged or untagged. We accept both
+        // COSE_Sign1_Tagged = #6.18(COSE_Sign1)
+        if (mt == MT_TAG) {
+            // This is a tagged structure.
+            // Then the object should start with a COSE_Sign1 Tag
+            if (additionalInformation != COSE_Sign1) {
+                throw new Error(
+                    `Not a COSE Single signature, tag: ${additionalInformation}`
+                );
+            }
 
-        // The object should start with a COSE_Sign1 Tag
-        if (additionalInformation != COSE_Sign1) {
-            throw new Error(
-                `Not a COSE Single signature, tag: ${additionalInformation}`
-            );
+            // Get rid of the tag for further processing
+            data = data.slice(1);
         }
-
-        // get rid of the tag
-        data = data.slice(1);
 
         // Decode the object into an Array with 4 elements
         let [protectedHeaders, unprotectedHeaders, payload, signature] =
