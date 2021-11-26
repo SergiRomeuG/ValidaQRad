@@ -5,6 +5,16 @@ import {log} from '../log'
 import { BrowserQRCodeReader } from '@zxing/browser';
 import { AbstractPage } from './abstractpage'
 
+// This is to facilitate debugging of certificates
+var testQRdata = "Put here the data for the QR of the certificate"
+
+var testQR = {
+    text: testQRdata
+}
+
+// Set the QR raw data above and enable debugging setting this flag to true
+var debugging = false
+
 export class ScanQrPage extends AbstractPage {
 
     constructor(id) {
@@ -23,6 +33,12 @@ export class ScanQrPage extends AbstractPage {
     }
 
     async enter() {
+
+        // If debugging, just try to decode the test QR
+        if (debugging) {
+            await processQRpiece(testQR)
+            return
+        }
 
         // Use this camera if the user selected it sometime in the past
         var selectedCameraId = localStorage.getItem("selectedCamera")
