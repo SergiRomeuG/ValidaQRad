@@ -14,6 +14,7 @@ import { PrivacyPolicy } from './pages/privacypolicy';
 import { SelectCamera } from './pages/selectcamera';
 import { RefreshKeys } from './pages/refreshkeys';
 import { Help } from './pages/help';
+import { LegalWarning } from './pages/legalwarning';
 
 export var pageDefs = [
     {
@@ -72,5 +73,9 @@ export var pageDefs = [
         name: "refreshKeys",
         className: RefreshKeys
     },
+    {
+        name: "legalWarning",
+        className: LegalWarning
+    }
 ]
 

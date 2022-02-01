@@ -26,20 +26,30 @@ function verifyVaccinationCert(hcert) {
     let doseNumber = payload["doseNumber"]
     let doseTotal = payload["doseTotal"]
 
+    //Check if vaccination is not completed
     if (doseNumber < doseTotal) {
         return "Vaccination not completed."
     }
 
     let dateVaccination = Date.parse(payload["dateVaccination"])
+    let dateOfBirth = Date.parse(payload["dateOfBirth"])
     let timeValidFrom = dateVaccination + 14*24*60*60*1000
-    if(doseTotal == 3) {
-        timeValidFrom = dateVaccination;
-    }
+    let timeValidationExpired = dateVaccination + 270*24*60*60*1000
+    let time18Years = dateOfBirth + 18*365*24*60*60*1000 + 4*24*60*60*1000
 
     let timeNow = Date.now()
-
-    if (timeNow < timeValidFrom) {
-        return "Certificate is not yet valid as vaccination is too recent."
+    
+    //Check if vaccination is completed
+    if(doseNumber== doseTotal && (doseTotal==1 || doseTotal==2)) {
+        //Check if last dose was taken more than 14 days before.
+        if(timeNow >= timeValidFrom) {
+            //Check if last dose was taken more than 270 days at is more than 18 years old.
+            if(timeNow > timeValidationExpired && timeNow >= time18Years){
+                return "Certificate is expired"
+            }
+            return CERT_OK
+        }
+        return "Certificate is not yet valid as vaccination is too recent." 
     }
 
     return CERT_OK
