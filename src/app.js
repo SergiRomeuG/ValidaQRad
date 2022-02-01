@@ -229,6 +229,7 @@ function initialFooter() {
             <img style="width: 150px; margin-top: 20px;" src=${image_escut} alt="">
             <br>
             <img style="width: 150px;" src=${image}  alt="">
+            <p style="color: #005db9; margin-bottom: 20px; font-size: 20px;"><a onclick='gotoPage("legalWarning")' href="javascript:void(0)">Avís Legal</a></p>
         </div>
         
         `
